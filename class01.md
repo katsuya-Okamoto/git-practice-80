@@ -1,3 +1,6 @@
+# ハノイの塔 プログラム クラス図
+
+```mermaid
 classDiagram
     direction LR
 
