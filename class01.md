@@ -4,26 +4,6 @@
 classDiagram
     direction LR
 
-    subgraph "Application Core"
-        THE_TEMPLE
-        MONK
-        SPOKESPERSON
-        TOWER
-        DISK
-    end
-
-    subgraph "Observer Pattern"
-        PUBLISHER
-        OBSERVER
-    end
-
-    subgraph "Strategy Pattern"
-        REPORTING_STRATEGY
-        WorkStartStrategy
-        WorkEndStrategy
-        DiskMovedStrategy
-    end
-
     ' === Class Details ===
     class THE_TEMPLE {
         <<Root>>
@@ -63,8 +43,6 @@ classDiagram
         +make(MONK)
         +update()
     }
-
-    ' === Pattern Details ===
     class PUBLISHER {
         <<Custom>>
         +observers: ARRAYED_LIST~OBSERVER~
@@ -103,3 +81,4 @@ classDiagram
     WorkStartStrategy --|> REPORTING_STRATEGY
     WorkEndStrategy --|> REPORTING_STRATEGY
     DiskMovedStrategy --|> REPORTING_STRATEGY
+```
