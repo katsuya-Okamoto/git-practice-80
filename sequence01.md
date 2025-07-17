@@ -1,10 +1,5 @@
 ```mermaid
 sequenceDiagram
-    participant THE_TEMPLE as T
-    participant MONK as M
-    participant SPOKESPERSON as S
-    participant TOWER as Tower
-
     T->>M: make()
     T->>S: make(M)
     T->>M: attach(S)
