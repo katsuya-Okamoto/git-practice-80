@@ -1,3 +1,4 @@
+```mermaid
 sequenceDiagram
     participant THE_TEMPLE as T
     participant MONK as M
